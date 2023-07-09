@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/principal.css">
+    <script src="https://kit.fontawesome.com/6418fbc3a7.js" crossorigin="anonymous"></script>
+    <title>Sistema de Inventario</title>
+</head>
+<body>
+
+    <!-- Creación del navbar-->
+
+    <nav>
+      <ul>
+          <li>
+              <div class="logo">
+              <a href="#">
+                  <img src="../images/logo.png" alt="">
+                  <span class="nav-text">Florería</span>
+              </a>
+          </div></li>
+          <div class="items">
+          <li><a href="principal.html">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-item">Inicio</span>
+          </a></li>
+          <li><a href="php/categoria.php">
+              <i class="fa-solid fa-folder-plus"></i>
+              <span class="nav-item">Categorías</span>
+          </a></li>
+          <li><a href="php/clasificacion.php">
+              <i class="fa-solid fa-folder-tree"></i>
+              <span class="nav-item">Clasificaciones</span>
+          </a></li>
+          <li><a href="php/productos.php">
+              <i class="fa-solid fa-boxes-stacked"></i>
+              <span class="nav-item">Productos</span>
+          </a></li>
+          <li><a href="php/venta.php">
+            <i class="fa-sharp fa-solid fa-cart-plus"></i>
+            <span class="nav-item">Ventas</span>
+        </a></li>
+          <li><a href="php/detalles.php">
+            <i class="fa-solid fa-file"></i>
+              <span class="nav-item">Informacion</span>
+          </a></li>
+          <li><a href="#">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <span class="nav-item">Configuración</span>
+          </a></li>
+          <li><a href="../index.html">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+              <span class="nav-item">Cerrar Sesión</span>
+          </a></li>
+      </div></ul>
+  </nav>
+
+    <!-- Creación del titulo-->
+    <div class="title">
+        <h1 class="lines-effect">Clasificación Globos
+        </h1>
+    </div>
+
+    <!-- Botón de registro-->
+    <div class="register">
+      <a href="principal.html" class="btn-neon">
+          <span id="span1"></span>
+          <span id="span2"></span>
+          <span id="span3"></span>
+          <span id="span4"></span>
+          Regresar
+      </a>
+  </div>
+
+    <!-- Contenedor de tarjetas-->
+    <div class="contenedor">
+        <div class="card">
+          <figure>
+            <img src="../images/graduacion.jpg">
+          </figure>
+          <div class="contenido">
+            <a href="php/graduacion.php">Graduacion</a>
+          </div>
+        </div>
+
+        <div class="card">
+            <figure>
+              <img src="../images/cumpleaños.jpg">
+            </figure>
+            <div class="contenido">
+              <a href="php/cumple.php">Cumpleaños</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="../images/amor.jpg">
+            </figure>
+            <div class="contenido">
+              <a href="php/amor.php">Amor</a>
+            </div>
+          </div>
+    </div>
+
+    <div class="contenedor">
+        <div class="card">
+          <figure>
+            <img src="../images/combos.jpg">
+          </figure>
+          <div class="contenido">
+            <a href="php/combos.php">combos</a>
+          </div>
+        </div>
+
+        <div class="card">
+            <figure>
+              <img src="../images/personalizados.jpg">
+            </figure>
+            <div class="contenido">
+              <a href="php/personalizados.php">Personalizados</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <figure>
+              <img src="../images/promos.jpg">
+            </figure>
+            <div class="contenido">
+              <a href="#">Promociones</a>
+            </div>
+          </div>
+    </div>
+
+</body>
+</html>

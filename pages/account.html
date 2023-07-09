@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Sistema de Inventarios</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Sistema de Inventarios</h3>
+        <div class="logo">
+            <picture>
+                <a href="../index.html"><img src="../images/IM.png" alt="logo-inventario"/></a>
+            </picture>
+        </div>
+        <div class="separator">
+            <hr>
+            <span>Crea una cuenta</span>
+            <hr>
+        </div>
+        <form action="../php/registrar.php" method="post">
+            <div class="entradas">
+                <label for="name">
+                    <span>Nombre</span>
+                    <input type="name" id="name" name="name" required>
+                </label>
+            </div>
+            <label for="last_Name">
+                <span>Apellido</span>
+                <input type="last_name" id="last_name" name="last_name">
+            </label>
+            <label for="empleado">
+                <span>Número de Empleado</span>
+                <input id="empleado" name="empleado">
+            </label>
+            <label for="password">
+                <span>Contraseña</span>
+                <input type="password" id="password" name="password">
+            </label>
+            <button type="submit" class="submit-btn" id="register" onclick="registrarUsuario()">Registrar</button>
+            <p>Tienes una cuenta   <a href="../index.html">Inicia Sesión</a></p>
+        </form>
+    </div>
+
+    <script src="../js/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

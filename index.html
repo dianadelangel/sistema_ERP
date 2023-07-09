@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sistema de Inventarios</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Sistema de Inventarios</h3>
+        <div class="logo">
+            <picture>
+                <a href="index.html"><img src="images/IM.png" alt="logo-inventario"/></a>
+            </picture>
+        </div>
+        <div class="separator">
+            <hr>
+            <span>Inicio de Sesión</span>
+            <hr>
+        </div>
+        <form action="php/validar.php" method="post">
+            <div class="entradas">
+                <label for="empleado">
+                    <span>Número de Empleado</span>
+                    <input id="empleado" name="empleado">
+                </label>
+            </div>
+            <label for="password">
+                <span>Contraseña</span>
+                <input type="password" id="password" name="password">
+            </label>
+            <button type="submit" class="submit-btn" onclick="loginUsuario()">Ingresar</button>
+        </form>
+    </div>
+
+    <script src="js/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

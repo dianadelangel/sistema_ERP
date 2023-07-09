@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    background: #dfe9f5;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 170%;
+    left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 8px 0 0 10px;
+}
+
+.logo img{
+    width: 65px;
+    height: 65px;
+    margin-left: -10px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logo span .nav-text{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.items a{
+    position: relative;
+    color: rgb(85,83,83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.items .fa-solid{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.items .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.items a:hover{
+    background: #eee;
+}
+
+nav:hover{
+    width: 280px;
+    transition: all 0.5 ease;
+}
+
+.title{
+    text-align: center;
+    margin-top: 2
+    5px;
+}
+
+.title h1{
+    display: inline-block;
+    position: relative;
+    color: #E30052;
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+}
+
+.title h1::after,h1::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.title h1::before{
+    left: -140px;
+}
+
+.title h1::after{
+    right: -140px;
+}
+
+.container{
+    margin: auto;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 450px;
+    background-color: white;
+    opacity: 0.95;
+    border-radius: 2%;
+
+}
+
+.container .logo{
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
+
+.container .logo:hover{
+    opacity: 0.8;
+}
+
+.container .logo picture {
+    width: 87px;
+    height: 87px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .logo picture img{
+    width: 75%;
+}
+
+.separator{
+    display: flex;
+    width: 80%;
+    gap: 15px;
+}
+
+.separator hr{
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.separator span{
+    color: #8b8b8b;
+}
+
+.entradas{
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+label{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label input{
+    width: 100%;
+    background-color: #ececfa;
+    opacity: 1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14pt;
+    transition: background-color 0.2s, border 0.2s, box-shadow 0.2s;
+}
+
+label input:hover{
+    background-color: white;
+    border: solid 3px #f3f3f4;
+    box-shadow: 0 0 4px #c512c58c;
+}
+
+label input:focus{
+    background-color: white;
+    border: solid 3px #f3f3f4;
+    box-shadow: 0 0 4px #c512c58c;
+}
+
+label span{
+    font-weight: 700;
+}
+
+.submit-btn{
+    background-color: #EA4C89;
+    color: white;
+    font-weight: 500;
+    font-size: 14pt;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submit-btn:hover{
+    opacity: 0.75;
+}
+
+.footer{
+    font-weight: bold;
+}

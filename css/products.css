@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&family=Playfair+Display:wght@400;500;700&family=Ubuntu:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+:root{
+    --primary-color: white;
+    --secondary-color: rgb(61,68,73);
+    --highlight-color: #3282b8;
+
+    --dt-padding: 12px;
+    --dt-padding-s: 6px;
+    --dt-padding-xs: 2px;
+
+    --dt-border-radius: 3px;
+
+    --dt-background-color-container: #2a3338;
+    --dt-border-color: var(--secondary-color);
+    --dt-bg-color: var(--highlight-color);
+    --dt-text-color: var(--primary-color);
+    --dt-bg-active-button: var(--highlight-color);
+    --dt-text-color-button: var(--primary-color);
+    --dt-text-color-active-button: var(--primary-color);
+    --dt-hover-cell-color: var(--highlight-color);
+    --dt-even-row-color: var(--secondary-color);
+    --dt-focus-color: var(--highlight-color);
+    --dt-input-background-color: var(--secondary-color);
+    --dt-input-color: var(--primary-color);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body{
+    background: #dfe9f5;
+}
+
+nav{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 87px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+}
+
+.logo{
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 8px 0 0 10px;
+}
+
+.logo img{
+    width: 65px;
+    height: 65px;
+    margin-left: -10px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding-left: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.logo span .nav-text{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.items a{
+    position: relative;
+    color: rgb(85,83,83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+}
+
+.items .fa-solid{
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.items .nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+.items a:hover{
+    background: #eee;
+}
+
+nav:hover{
+    width: 200px;
+    transition: all 0.5 ease;
+}
+
+/*Estilos del Modal*/
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(0,0,0,0.81);
+    display: none;
+}
+
+.bodyModal{
+    width: 100%;
+    height: 100%;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: o-inline-flex;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .bodyModal #form_add_product{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.modal .bodyModal #form_add_product h2{
+    color:#E30052;
+    text-transform: uppercase;
+}
+
+.modal .bodyModal #form_add_product h3{
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.btn_new{
+	display: inline-block;
+	background: #239baa;
+	color: #FFF;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 20px;
+}
+.btn_ok{
+	display: inline-block;
+	background: #eb0606;
+	color: #FFF;
+	padding: 5px 25px;
+	border-radius: 4px;
+	margin: 10px;
+}
+
+
+/*Estilos del Titulo*/
+
+.title{
+    text-align: center;
+    margin-top: 2
+    5px;
+}
+
+.title h1{
+    display: inline-block;
+    position: relative;
+    color: #E30052;
+    font-family: 'Dancing Script', cursive;
+    font-size: 42px;
+}
+
+.title h1::after,h1::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+}
+
+.title h1::before{
+    left: -140px;
+}
+
+.title h1::after{
+    right: -140px;
+}
+
+.register{
+    margin-left: 80%;
+    margin-top: 10px;
+}
+
+.register .btn-neon{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #0a0a0a;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.register .btn-neon:hover{
+    color: #fff;
+    background: #a945c7;
+    box-shadow: 0 0 10px #a945c7, 0 0 40px #a945c7, 0 0 80px #a945c7;
+    transition-delay: 1s;
+}
+
+.register .btn-neon span{
+    position: absolute;
+    display: block;
+}
+
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#a945c7);
+}
+
+.register .btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#a945c7);
+}
+
+.register .btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#a945c7);
+}
+
+.register .btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#a945c7);
+}
+
+.register .btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*Estilos para la tabla*/
+
+.datatable-container{
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--dt-background-color-container);
+    border-radius: var(--dt-border-radius);
+    color: var(--dt-text-color);
+    padding: 20px;
+    width: 1175px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 105px;
+    font-size: 12px;
+}
+
+/*Estilos del Buscador*/
+
+.datatable-container .form-search{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    float: right;
+    background: initial;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.datatable-container .form-search .btn-search{
+    background: #3282b8;
+    color: #fff;
+    padding: 0 20px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.datatable-container .datatable{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.datatable-container .datatable,
+.datatable-container .datatable th,
+.datatable-container .datatable td{
+    padding: var(--dt-padding) var(--dt-padding);
+}
+
+.datatable-container .datatable th{
+    font-weight: bolder;
+    text-align: left;
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+.datatable-container .datatable td{
+    border-bottom: solid 1px var(--dt-border-color);
+}
+
+
+
+.datatable-container .datatable tbody tr:nth-child(even){
+    background-color: var(--dt-even-row-color);
+}
+
+.datatable-container .datatable tbody tr:hover{
+    background-color: var(--dt-hover-cell-color);
+}
+
+/*Estilos paginador*/
+
+.paginador ul{
+    padding: 15px;
+    list-style: none;
+    background: #2a3338;
+    margin-top: 15px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.paginador a, .pageSelected{
+    color: #fff;
+    border: 1px solid #2a3338;
+    padding: 5px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    width: 35px;
+}
+
+.paginador a:hover{
+    background: #3282b8;
+}
+
+.pageSelected{
+    color:#fff;
+    background: #428bca;
+    border: 1px solid #428bca;
+}
